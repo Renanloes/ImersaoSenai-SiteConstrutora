@@ -1,0 +1,29 @@
+/* geral */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* listas */
+ul{
+list-style-type: none;
+}
+
+/* links */
+a{
+text-decoration: none;
+color: black;
+}
+
+/* Chrome, Edge, Safari */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

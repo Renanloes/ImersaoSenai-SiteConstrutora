@@ -1,0 +1,83 @@
+html,body {
+    height: 100%;}
+
+body {
+    display: flex;
+    align-items: stretch; /* filhos com a mesma altura */
+    justify-content: flex-end; /*coloca tudo a direita*/
+    background-image: url('./images/ImagemLogin.jpeg');
+    background-size: cover;
+}
+
+/* Conteúdo principal */
+.box {
+    background-color: #9bcf3b;
+    display: flex;
+    flex-direction: column;     /* organiza em coluna */
+    justify-content: space-between; /* distribui: topo, meio e fundo */
+    align-items: center;        /* centraliza no eixo horizontal */
+    min-height: 100vh;          /* ocupa a tela inteira */
+    padding: 2rem;              /* respiro interno */
+    box-sizing: border-box;
+    max-width: 350px;
+
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 3rem;                  /* espaço entre h3 e inputs */
+    text-align: center;
+}  
+
+.box h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.input{
+    padding: 10px;
+    border-color: #9bcf3b;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;                  /* espaço entre botões */
+    margin-bottom: 1rem;        /* afastar um pouco do rodapé */
+}
+
+.button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Sidebar à direita */
+.barraLateral {
+    background: black;
+    width: 150px;
+    min-height: 100vh; /* altura da tela */
+    display: flex; /* para o <ul> poder crescer */
+    align-items: stretch; /* <ul> estica na largura */
+}
+
+.lista {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* espalha os <li> verticalmente */
+    padding: 16px 8px;
+}
+
+.lista li a {
+    display: block;
+    padding: 8px;
+    color: white;
+}
+
+.lista li a:hover {
+    background: rgba(143, 138, 138, 0.1);
+    border-radius: 8px;
+}
