@@ -23,7 +23,30 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+/* Sidebar à direita */
+.barraLateral {
+    background: black;
+    width: 150px;
+    min-height: 100vh; /* altura da tela */
+    display: flex; /* para o <ul> poder crescer */
+    align-items: stretch; /* <ul> estica na largura */
+}
+
+.lista {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* espalha os <li> verticalmente */
+    padding: 16px 8px;
+}
+
+.lista li a {
+    display: block;
+    padding: 8px;
+    color: white;
+}
+
+.lista li a:hover {
+    background: rgba(143, 138, 138, 0.1);
+    border-radius: 8px;
 }
