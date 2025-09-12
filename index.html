@@ -15,10 +15,8 @@
             <h3>Informe suas credenciais</h3>
 
             <form method="POST">
-                {% csrf_token %}
                 <input type="text" name="nome" placeholder="Informe seu nome" class="input" required>
                 <input type="number" name="cpf" placeholder="Informe seu CPF" maxlength="11" class="input" required>
-                <button type="submit" class="button">Cadastrar</button>
             </form>
         </div>
 

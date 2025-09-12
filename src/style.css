@@ -1,5 +1,6 @@
-html,body {
-    height: 100%;}
+/* html,body {
+    height: 100%;
+} */
 
 body {
     display: flex;
@@ -51,6 +52,7 @@ body {
 .button {
     padding: 10px 20px;
     cursor: pointer;
+    border-radius:4px;
 }
 
 /* Sidebar à direita 
